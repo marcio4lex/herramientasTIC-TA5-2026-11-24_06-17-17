@@ -14,11 +14,13 @@ public static class PlantSceneBuilder
     static readonly (WasteType type, string label, Color color)[] Bins =
     {
         (WasteType.Plastico, "PLÁSTICO", new Color(0.95f, 0.95f, 0.95f)),
-        (WasteType.Papel, "PAPEL Y CARTÓN", new Color(0.10f, 0.35f, 0.85f)),
+        (WasteType.Papel, "PAPEL Y
+CARTÓN", new Color(0.10f, 0.35f, 0.85f)),
         (WasteType.Vidrio, "VIDRIO", new Color(0.10f, 0.60f, 0.20f)),
         (WasteType.Metal, "METALES", new Color(0.95f, 0.80f, 0.10f)),
         (WasteType.Organico, "ORGÁNICOS", new Color(0.45f, 0.28f, 0.12f)),
-        (WasteType.NoAprovechable, "NO APROVECHABLES", new Color(0.08f, 0.08f, 0.08f)),
+        (WasteType.NoAprovechable, "NO
+APROVECHABLES", new Color(0.08f, 0.08f, 0.08f)),
         (WasteType.Peligroso, "PELIGROSOS", new Color(0.85f, 0.10f, 0.10f)),
     };
 
@@ -207,7 +209,7 @@ public static class PlantSceneBuilder
         lid.transform.localPosition = new Vector3(0, 1.25f, 0);
         lid.transform.localScale = new Vector3(1.5f, 0.1f, 1.3f);
         lid.GetComponent<Renderer>().sharedMaterial = lidMat;
-        var label = Text(root.transform, "TIPO", new Vector3(0, 0.75f, -0.61f), 0.013f, Color.black);
+        var label = Text(root.transform, "TIPO", new Vector3(0, 0.75f, -0.61f), 0.017f, Color.black);
         label.fontSize = 96;
         root.AddComponent<RecycleBin>();
         var p = PrefabUtility.SaveAsPrefabAsset(root, $"{Root}/Prefabs/Contenedor.prefab");
