@@ -40,7 +40,7 @@ public class RecyclingEventClient : MonoBehaviour
 
     public void ShowLocal(string msg)
     {
-        if (panelText) panelText.text = msg;
+        if (panelText) panelText.text = string.Join("\n", Array.ConvertAll(msg.Split('\n'), l => Wrap(l, 30).TrimEnd()));
     }
 
     // Chatbot de n8n: explica el residuo que el jugador acaba de recoger.
@@ -59,7 +59,7 @@ public class RecyclingEventClient : MonoBehaviour
         if (req.result == UnityWebRequest.Result.Success)
         {
             var r = JsonUtility.FromJson<N8nResponse>(req.downloadHandler.text);
-            ShowLocal($"Llevas: {item.itemName}\n{Wrap(r.explicacion, 42)}");
+            ShowLocal($"Llevas: {item.itemName}\n{r.explicacion}");
         }
         else ShowLocal($"Llevas: {item.itemName}\nBúscale su contenedor.\n(chatbot sin conexión)");
     }
@@ -93,7 +93,7 @@ public class RecyclingEventClient : MonoBehaviour
         if (req.result == UnityWebRequest.Result.Success)
         {
             var r = JsonUtility.FromJson<N8nResponse>(req.downloadHandler.text);
-            shown = $"{r.mensaje}\n{Wrap(r.explicacion, 42)}";
+            shown = $"{r.mensaje}\n{r.explicacion}";
             if (statsText)
                 statsText.text = $"DASHBOARD n8n\nCorrectos: {r.correctos}  Incorrectos: {r.incorrectos}\n" +
                                  $"Total eventos: {r.total}\nReaprovechamiento SJM 2026: {r.tasaPlanta:0.00}%";
