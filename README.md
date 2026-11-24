@@ -2,6 +2,12 @@
 
 Escenario 3D FPS, simulador VR e integración con n8n para la propuesta **ODS 12: Reciclaje – Planta de reciclaje**.
 
+## 🎥 Video demostrativo
+
+[![Ver el video demostrativo en YouTube](https://img.youtube.com/vi/Z6BU5i_OooM/hqdefault.jpg)](https://youtu.be/Z6BU5i_OooM)
+
+▶️ Haz clic en la imagen para ver el recorrido FPS, el Meta XR Simulator y la integración con n8n.
+
 | Carpeta | Contenido |
 |---|---|
 | `Objeto3D/` | Proyecto Unity 3D **Objeto3D** (Parte 1). Escena `Assets/Scenes/PlantaReciclaje.unity` |
