@@ -4,7 +4,7 @@ Escenario 3D FPS, simulador VR e integración con n8n para la propuesta **ODS 12
 
 | Carpeta | Contenido |
 |---|---|
-| `My project/` | Proyecto Unity 3D **Objeto3D** (Parte 1). Se renombrará a `Objeto3D/`. Escena `Assets/Scenes/PlantaReciclaje.unity` |
+| `Objeto3D/` | Proyecto Unity 3D **Objeto3D** (Parte 1). Escena `Assets/Scenes/PlantaReciclaje.unity` |
 | `ObjetoVR/` | Proyecto Unity VR (Parte 2): OpenXR + Meta XR Core SDK, Building Block *Camera Rig* + *OVR Player Controller* |
 | `Integracion/` | Workflow n8n (eventos de clasificación, chatbot de residuos y dashboard) y script de arranque |
 | `Data/` | CSV de datos abiertos de residuos municipales y su README (fuente, fecha y licencia) |
