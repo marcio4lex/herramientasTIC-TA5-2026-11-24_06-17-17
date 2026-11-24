@@ -14,13 +14,11 @@ public static class PlantSceneBuilder
     static readonly (WasteType type, string label, Color color)[] Bins =
     {
         (WasteType.Plastico, "PLÁSTICO", new Color(0.95f, 0.95f, 0.95f)),
-        (WasteType.Papel, "PAPEL Y
-CARTÓN", new Color(0.10f, 0.35f, 0.85f)),
+        (WasteType.Papel, "PAPEL Y\nCARTÓN", new Color(0.10f, 0.35f, 0.85f)),
         (WasteType.Vidrio, "VIDRIO", new Color(0.10f, 0.60f, 0.20f)),
         (WasteType.Metal, "METALES", new Color(0.95f, 0.80f, 0.10f)),
         (WasteType.Organico, "ORGÁNICOS", new Color(0.45f, 0.28f, 0.12f)),
-        (WasteType.NoAprovechable, "NO
-APROVECHABLES", new Color(0.08f, 0.08f, 0.08f)),
+        (WasteType.NoAprovechable, "NO\nAPROVECHABLES", new Color(0.08f, 0.08f, 0.08f)),
         (WasteType.Peligroso, "PELIGROSOS", new Color(0.85f, 0.10f, 0.10f)),
     };
 
