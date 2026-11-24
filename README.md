@@ -9,6 +9,8 @@ Escenario 3D FPS, simulador VR e integración con n8n para la propuesta **ODS 12
 | `Integracion/` | Workflow n8n (eventos de clasificación, chatbot de residuos y dashboard) y script de arranque |
 | `Data/` | CSV de datos abiertos de residuos municipales y su README (fuente, fecha y licencia) |
 
+📘 **Para instalar y ejecutar el proyecto en otra computadora, sigue [INSTALACION.md](INSTALACION.md).**
+
 Unity 6000.6.10f1 (Built-in Render Pipeline), Active Input Handling = Both.
 
 ## Escena
